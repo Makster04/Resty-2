@@ -8,7 +8,7 @@ import './App.scss';
 // Why is this source of truth beneficial when spread across a global organization?
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import Form from './Components/Form';
+import Form from './Components/Form/Form';
 import Results from './Components/Results';
 
 
