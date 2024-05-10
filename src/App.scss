@@ -1,9 +1,12 @@
 $backgroundColor: #f5f5f5;
+$accentColor: #007bff; // Bright blue accent color
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif; // Modern font
+  color: #333; // Default text color
 }
 
 body {
@@ -17,18 +20,33 @@ body {
   }
 
   footer {
-    background: darken($backgroundColor, 50);
-    border-top: 1px solid #eee;
-    padding: 1em 3em;
+    background: $accentColor; // Bright blue accent color
+    border-top: 2px solid darken($accentColor, 10%); // Darker border
+    padding: 2em 4em; // More padding for emphasis
     margin: 0;
+    text-align: center;
+    font-size: 1.2em; // Slightly larger font size
+    color: white; // White text color for better contrast
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5); // Shadow effect with blue tint
+    transition: box-shadow 0.3s ease-in-out; // Smooth transition on hover
+    cursor: pointer; // Pointer cursor to indicate interactivity
+
+    &:hover {
+      box-shadow: 0 0 30px rgba(0, 123, 255, 0.8); // Lighter shadow on hover
+    }
   }
 
   header {
-    background: darken($backgroundColor, 75);
-    border-bottom: 1px solid #eee;
-    color: #eee;
-    padding: 0;
+    background: linear-gradient(to right, $accentColor, darken($accentColor, 10%)); // Gradient background
+    border-bottom: 3px solid darken($accentColor, 20%); // Darker border for contrast
+    padding: 0.5em 0; // Reduced padding for a smaller height
     margin: 0;
     text-align: center;
+    font-size: 1.8em; // Slightly smaller font size
+    letter-spacing: 20px; // Reduced letter spacing for readability
+    text-transform: uppercase; // Uppercase text
+    color: white; // White text color for better contrast
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); // Text shadow for depth
   }
+
 }
