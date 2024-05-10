@@ -8,7 +8,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Form from './Components/Form/Form';
 import Results from './Components/Results';
-import History from './History'; // Import History component
+import History from './assets/History/History'; // Import History component
 
 // Define the shape of the state
 interface State {
